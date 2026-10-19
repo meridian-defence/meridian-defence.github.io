@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meridian Defence — Securing the Sky. Sustaining the Earth.</title>
+  <meta name="description" content="Meridian Defence builds zero-emission aerospace systems that help governments and corporations reach net zero — without compromising security." />
+  <meta property="og:title" content="Meridian Defence" />
+  <meta property="og:description" content="Zero-emission aerospace for a secure, sustainable world." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://meridian-defence.github.io/assets/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Meridian Defence home">
+      <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 2v28M4 16c4-5 20-5 24 0" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>MERIDIAN</span>
+    </a>
+    <nav class="links" id="links">
+      <a href="#mission">Mission</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#impact">Impact</a>
+      <a href="#insights">Insights</a>
+      <a href="#careers">Careers</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="soundToggle" aria-label="Toggle sound" title="Sound">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path id="soundWaves" d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-small">Contact</a>
+      <button class="icon-btn menu" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <img src="assets/hero.jpg" alt="Solar-powered Meridian aircraft above the clouds at dawn" class="hero-img" />
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Aerospace · Defence · Climate</p>
+        <h1 class="reveal">Securing the sky.<br /><em>Sustaining the earth.</em></h1>
+        <p class="lead reveal">Meridian builds zero-emission aerospace systems that help nations and enterprises protect what matters — and reach net zero doing it.</p>
+        <div class="hero-cta reveal">
+          <a href="#mission" class="btn">Discover Meridian</a>
+          <a href="#platforms" class="btn btn-ghost">Our platforms →</a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="section" id="mission">
+      <div class="container narrow">
+        <p class="eyebrow reveal">Our mission</p>
+        <h2 class="statement reveal">Security has always meant protecting the future. We believe that now includes the <em>planet it happens on</em>.</h2>
+        <p class="body reveal">Founded on the principle that resilience and responsibility are the same thing, Meridian designs aircraft, satellites and intelligence systems that run on solar, hydrogen and synthetic fuel — and pairs them with the climate analytics governments need to decarbonise entire economies by 2040.</p>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container grid-4">
+        <div class="stat reveal"><span class="num" data-count="2040">0</span><span class="lbl">Net zero target for every client we serve</span></div>
+        <div class="stat reveal"><span class="num" data-count="38" data-suffix="">0</span><span class="lbl">Governments in partnership</span></div>
+        <div class="stat reveal"><span class="num" data-count="12" data-suffix="Mt">0</span><span class="lbl">CO₂ avoided annually by our fleet</span></div>
+        <div class="stat reveal"><span class="num" data-count="100" data-suffix="%">0</span><span class="lbl">Renewable power across our facilities</span></div>
+      </div>
+    </section>
+
+    <!-- PLATFORMS -->
+    <section class="section" id="platforms">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Platforms</p>
+          <h2 class="reveal">Engineered for endurance.<br />Designed for the decades ahead.</h2>
+        </div>
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" data-tab="0" role="tab">Halcyon</button>
+          <button class="tab" data-tab="1" role="tab">Meridian Orbit</button>
+          <button class="tab" data-tab="2" role="tab">Terra</button>
+        </div>
+        <div class="feature reveal">
+          <div class="feature-media"><img id="featImg" src="assets/hero.jpg" alt="" loading="lazy" /></div>
+          <div class="feature-text">
+            <span class="tag" id="featTag">High-altitude pseudo-satellite</span>
+            <h3 id="featTitle">Halcyon</h3>
+            <p id="featBody">A solar-electric aircraft that flies for months at 65,000 ft. Surveillance, disaster response and atmospheric monitoring — with zero fuel and zero emissions.</p>
+            <ul id="featList"><li>180-day endurance</li><li>Fully solar-electric</li><li>Wildfire &amp; flood early warning</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT: FACILITY -->
+    <section class="split" id="impact">
+      <div class="split-media reveal"><img src="assets/facility.jpg" alt="Meridian's timber-framed, living-wall hangar" loading="lazy" /></div>
+      <div class="split-text">
+        <p class="eyebrow reveal">Sustainable living, built in</p>
+        <h2 class="reveal">The first carbon-negative aerospace campus.</h2>
+        <p class="body reveal">Our Meridian Works campus is built from mass timber, cooled by living walls and powered entirely by on-site solar. Engineers live within walking distance in our net-positive housing community — because how we build is as important as what we build.</p>
+        <a href="#insights" class="link reveal">Read the 2026 Impact Report →</a>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">How we work</p>
+          <h2 class="reveal">Three commitments. No exceptions.</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal"><span class="card-n">01</span><h3>Clean propulsion</h3><p>Every platform we deliver after 2028 runs on solar, hydrogen or certified synthetic fuel.</p></article>
+          <article class="card reveal"><span class="card-n">02</span><h3>Climate intelligence</h3><p>Orbital and aerial data turned into decarbonisation roadmaps for ministries and boardrooms.</p></article>
+          <article class="card reveal"><span class="card-n">03</span><h3>Circular manufacturing</h3><p>94% of every airframe is recovered and reused. Nothing we make is designed to become waste.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED QUOTE -->
+    <section class="bleed">
+      <img src="assets/earth.jpg" alt="Reforested valley with wind turbines" loading="lazy" />
+      <div class="bleed-shade"></div>
+      <blockquote class="reveal">
+        “The most strategic asset any nation has is a liveable planet.”
+        <cite>— Eleanor Vance, Chief Executive Officer</cite>
+      </blockquote>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section class="section" id="insights">
+      <div class="container">
+        <div class="section-head row">
+          <div><p class="eyebrow reveal">Insights</p><h2 class="reveal">Perspectives</h2></div>
+          <a href="#contact" class="link reveal">Subscribe →</a>
+        </div>
+        <div class="grid-3">
+          <a class="post reveal" href="#contact"><img src="assets/orbit.jpg" alt="" loading="lazy" /><span class="tag">Report</span><h3>2026 Impact Report: twelve megatonnes and counting</h3><p>October 2026 · 6 min read</p></a>
+          <a class="post reveal" href="#contact"><img src="assets/earth.jpg" alt="" loading="lazy" /><span class="tag">Perspective</span><h3>Why climate resilience is the new national security</h3><p>September 2026 · 8 min read</p></a>
+          <a class="post reveal" href="#contact"><img src="assets/facility.jpg" alt="" loading="lazy" /><span class="tag">Engineering</span><h3>Inside Meridian Works: building in timber at aerospace tolerance</h3><p>August 2026 · 5 min read</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS -->
+    <section class="section alt" id="careers">
+      <div class="container narrow center">
+        <p class="eyebrow reveal">Careers</p>
+        <h2 class="reveal">Do the most important work of your life.</h2>
+        <p class="body reveal">We are hiring engineers, scientists, policy specialists and makers across London, Singapore and Toulouse.</p>
+        <a href="#contact" class="btn reveal">View open roles</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="reveal">Let's talk about your path to net zero.</h2>
+          <p class="body reveal">Government programmes, enterprise partnerships and press enquiries.</p>
+        </div>
+        <form class="form reveal" id="contactForm">
+          <label>Name<input name="name" required /></label>
+          <label>Work email<input type="email" name="email" required /></label>
+          <label>Organisation<input name="org" /></label>
+          <label>Message<textarea name="msg" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Send enquiry</button>
+          <p class="form-ok" id="formOk" hidden>Thank you — our team will be in touch shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#top" class="brand"><span>MERIDIAN</span></a><p class="muted">Securing the sky. Sustaining the earth.</p></div>
+      <div><h4>Company</h4><a href="#mission">Mission</a><a href="#careers">Careers</a><a href="#insights">Insights</a></div>
+      <div><h4>Platforms</h4><a href="#platforms">Halcyon</a><a href="#platforms">Meridian Orbit</a><a href="#platforms">Terra</a></div>
+      <div><h4>Legal</h4><a href="privacy.html">Privacy</a><a href="#" id="cookieSettings">Cookie settings</a></div>
+    </div>
+    <div class="container footer-base muted">© <span id="year"></span> Meridian Defence. All rights reserved. A fictional company.</div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <p>We use cookies to improve your experience and understand how our site is used. See our <a href="privacy.html">privacy policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-small" id="cookieDecline">Essential only</button>
+      <button class="btn btn-small" id="cookieAccept">Accept all</button>
+    </div>
+  </div>
+
+  <!-- SUPPORT BUTTON (opens Botpress) -->
+  <button class="support" id="supportBtn" aria-label="Open support chat">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 5h16v11H8l-4 4V5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    <span>Support</span>
+  </button>
+
+  <!-- =========================================================
+       BOTPRESS: paste your two Botpress <script> tags below.
+       Get them from Botpress Studio → Webchat → Embed.
+       They look like:
+       <script src="https://cdn.botpress.cloud/webchat/v3.x/inject.js"></script>
+       <script src="https://files.bpcontent.cloud/.../your-config.js" defer></script>
+       ========================================================= -->
+
+  <script src="script.js"></script>
+</body>
+</html>
