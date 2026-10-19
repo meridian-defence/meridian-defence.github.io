@@ -1,4 +1,7 @@
 /* Meridian Defence — site interactions */
+/* ==== PASTE YOUR BOTPRESS LINK BETWEEN THE QUOTES (the one with /webchat/ in it) ==== */
+var BOTPRESS_URL = "";
+
 (function () {
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => document.querySelectorAll(s);
@@ -42,13 +45,13 @@
 
   /* ---------- Platform tabs ---------- */
   const platforms = [
-    { tag: "High-altitude pseudo-satellite", title: "Halcyon", img: "assets/hero.jpg",
+    { tag: "High-altitude pseudo-satellite", title: "Halcyon", img: "hero.jpg",
       body: "A solar-electric aircraft that flies for months at 65,000 ft. Surveillance, disaster response and atmospheric monitoring — with zero fuel and zero emissions.",
       list: ["180-day endurance", "Fully solar-electric", "Wildfire & flood early warning"] },
-    { tag: "Earth observation constellation", title: "Meridian Orbit", img: "assets/orbit.jpg",
+    { tag: "Earth observation constellation", title: "Meridian Orbit", img: "orbit.jpg",
       body: "A 64-satellite constellation that measures emissions from every power plant, port and forest on Earth — giving governments verifiable, real-time carbon accounting.",
       list: ["Daily global methane mapping", "Secure sovereign data links", "Deorbit-by-design, zero debris"] },
-    { tag: "Climate intelligence platform", title: "Terra", img: "assets/earth.jpg",
+    { tag: "Climate intelligence platform", title: "Terra", img: "earth.jpg",
       body: "Our decision platform turns aerial and orbital data into net-zero roadmaps — modelling policy, supply chains and land use for ministries and Fortune 500s alike.",
       list: ["Scenario modelling to 2050", "Scope 1–3 verification", "Reforestation targeting"] },
   ];
@@ -117,13 +120,20 @@
     e.preventDefault(); e.target.reset(); $("#formOk").hidden = false; welcome();
   });
 
-  /* ---------- Support button → Botpress ---------- */
+  /* ---------- Support button -> Botpress chat panel ---------- */
+  const panel = document.createElement("div");
+  panel.className = "chat-panel";
+  panel.innerHTML = '<div class="chat-head"><span>Meridian Support</span><button aria-label="Close">&times;</button></div><div class="chat-body"></div>';
+  document.body.appendChild(panel);
+  panel.querySelector("button").addEventListener("click", () => panel.classList.remove("open"));
   $("#supportBtn").addEventListener("click", () => {
     chime(783.99, 0.04);
-    if (window.botpress && typeof window.botpress.open === "function") {
-      window.botpress.open();
-    } else {
-      alert("Support chat isn't connected yet. Add your Botpress embed scripts to index.html.");
+    const body = panel.querySelector(".chat-body");
+    if (!body.firstChild) {
+      body.innerHTML = BOTPRESS_URL
+        ? '<iframe src="' + BOTPRESS_URL + '" title="Support chat"></iframe>'
+        : '<p class="chat-empty">Support chat is not connected yet. Add your Botpress link at the top of script.js.</p>';
     }
+    panel.classList.toggle("open");
   });
 })();
