@@ -1,6 +1,6 @@
 /* Meridian Defence — site interactions */
 /* ==== PASTE YOUR BOTPRESS LINK BETWEEN THE QUOTES (the one with /webchat/ in it) ==== */
-var BOTPRESS_URL = "";
+var BOTPRESS_URL = "https://cdn.botpress.cloud/webchat/v3.7/shareable.html?configUrl=https://files.bpcontent.cloud/2026/10/19/01/20261019012507-9R5KJMDB.json";
 
 (function () {
   const $ = (s) => document.querySelector(s);
